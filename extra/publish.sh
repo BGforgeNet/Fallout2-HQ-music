@@ -9,4 +9,4 @@ else
   export version="git$TRAVIS_COMMIT"
 fi
 
-zip -r "${mod_name}_${version}.zip" *
+zip -r "${mod_name}_${version}.zip" data
