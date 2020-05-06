@@ -1,0 +1,21 @@
+language: minimal
+dist: bionic
+sudo: false
+
+script:
+  - ./extra/publish.sh
+
+env:
+  global:
+    - mod_name: hq_music
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file:
+    - hq_music*.zip
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
