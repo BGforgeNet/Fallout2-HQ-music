@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 3
+Added missing Abbey track for UHQ.
+
 ## Version 2
 Added ultra HQ versions.
 
