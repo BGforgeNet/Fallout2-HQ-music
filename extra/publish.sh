@@ -10,7 +10,7 @@ else
 fi
 
 for q in hq uhq; do
-  fname="fallout12_${q}_music.zip"
+  fname="fallout12_${q}_music_${version}.zip"
   cd "$q"
   zip "$fname" *
   mv "$fname" ..
