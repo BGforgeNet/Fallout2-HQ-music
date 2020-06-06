@@ -9,4 +9,10 @@ else
   export version="git$TRAVIS_COMMIT"
 fi
 
-zip -r "${mod_name}_${version}.zip" data
+for q in hq uhq; do
+  fname="fallout12_$q_music.zip"
+  cd "$q"
+  zip * "$fname"
+  mv "$fname" ..
+  cd ..
+done
