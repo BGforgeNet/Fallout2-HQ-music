@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 4
+Replaced maybe, abbey1, prmtribe, wind1, wind2
+HQ updated from UHQ
+
 ## Version 3
 Added missing Abbey track for UHQ.
 
