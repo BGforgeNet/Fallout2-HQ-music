@@ -19,6 +19,8 @@ High quality music for Fallout 1 and 2.
 Note: HQ version is already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project), you don't need to install it separately if you use RPU. (But if you want UHQ, see below.)
 
 ### Ultra high quality
+Ultra HQ is lossless.
+
 1. Make sure you have [sfall](https://github.com/phobos2077/sfall/) (`ddraw.dll`) version no less than 4.1.1.
 1. Download UHQ version from the [latest release page](https://github.com/BGforgeNet/Fallout2-HQ-music/releases/latest).
 1. Extract into `data\sound\music`.
@@ -26,3 +28,6 @@ Note: HQ version is already included into [Restoration Project](https://github.c
 1. In `ddraw.ini`, find `[Sound]` section and set `AllowDShowSound=2`.
 
 **Note:** you can't use UHQ in Fallout **1** directly, but you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2).
+
+### EBUR128
+If you hear crackling in the speakers, try EBUR versions.

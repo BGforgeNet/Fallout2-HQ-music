@@ -1,7 +1,7 @@
 # Changelog
 
 ## Version 5
-Added [ebur128](https://en.wikipedia.org/wiki/EBU_R_128) versions. Loudness approx as in original game files.
+Added [ebur128](https://en.wikipedia.org/wiki/EBU_R_128) versions. Loudness approximately as in original game files.
 
 ## Version 4
 - Maybe: replaced with F4 version.
