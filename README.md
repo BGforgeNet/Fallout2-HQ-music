@@ -9,13 +9,14 @@
 
 
 Standard Fallout 1/2 music is 22Khz `.acm`. In this repo you can find the following alternatives:
-- High quality. 44.1Khz `.acm`. (Already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
-- Ultra HQ (`.wav`). Lossess, uncompressed. ~1Gb.
-- Ultra HQ (WavPack). Lossless. ~0.5Gb, but requires WavPack codec.
-
-Tips: [Fallout 1](#fallout-1), [Linux](#linux).
+- __High quality__: 44.1Khz `.acm`. (Already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
+- __Ultra HQ `.wav`__: lossess, uncompressed. ~1Gb.
+- __Ultra HQ WavPack__: lossless. ~0.5Gb, but requires WavPack codec.
 
 ## Installation
+1. [Sfall](#sfall)
+1. [HQ](#hq) | [UHQ wav](#uhq-wav) | [UHQ WavPack](#uhq-wavpack)
+1. Extra tips: [Fallout 1](#fallout-1), [Linux](#linux).
 
 ### Sfall
 Sfall is required for any HQ/UHQ option.
@@ -25,7 +26,7 @@ Sfall is required for any HQ/UHQ option.
 2. In `fallout2.cfg`, find and set the following:
     ```ini
     [sound]
-    music_path1=data\sound\music\`.
+    music_path1=data\sound\music\
     ```
 
 ### HQ
@@ -49,5 +50,5 @@ Also, you will need to install [WavPack](https://www.wavpack.com/downloads.html)
 You can't use HQ/UHQ in Fallout **1** directly. But you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2). The procedure is the same.
 
 ## Linux
-- For any version, make sure to install `gstreamer-plugins-good`, with architecture matching `WINEARCH`.
+- Make sure to install `gstreamer-plugins-good`, with architecture matching `WINEARCH`.
 - For UHQ (WavPack), also install WavPack.
