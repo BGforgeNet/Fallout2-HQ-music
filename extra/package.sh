@@ -6,7 +6,7 @@ short_sha="$(git rev-parse --short HEAD)"
 version="git$short_sha"
 if [[ ! -z "${GITHUB_REF-}" ]]; then
   if echo "$GITHUB_REF" | grep "refs/tags"; then # tagged
-    version="$(echo $GITHUB_REF | sed 's|refs\/tags||')"
+    version="$(echo $GITHUB_REF | sed 's|refs\/tags\/||')"
   fi
 fi
 
