@@ -2,16 +2,18 @@
 
 set -xeu -o pipefail
 
-# release?
-if [ -n "$TRAVIS_TAG" ]; then # tag found: releasing
-  export version="$TRAVIS_TAG"
-else
-  export version="git$TRAVIS_COMMIT"
+short_sha="$(git rev-parse --short HEAD)"
+version="git$short_sha"
+if [[ ! -z "${GITHUB_REF-}" ]]; then
+  if echo "$GITHUB_REF" | grep "refs/tags"; then # tagged
+    version="$(echo $GITHUB_REF | sed 's|refs\/tags\/v||')"
+  fi
 fi
 
-for q in hq hq_ebur128 uhq uhq_ebur128; do
-  fname="fallout12_${q}_music_${version}.zip"
+for q in hq uhq_wav uhq_wavpack; do
+  fname="fallout_${q}_music_${version}.zip"
   cd "$q"
+  rm -f readme.md
   zip "$fname" *
   mv "$fname" ..
   cd ..

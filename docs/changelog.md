@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 6
+- Switched to 44.1Khz.
+- Added a WavPack package.
+
 ## Version 5
 Added [ebur128](https://en.wikipedia.org/wiki/EBU_R_128) versions. Loudness approximately as in original game files.
 
