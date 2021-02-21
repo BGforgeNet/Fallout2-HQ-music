@@ -1,1 +1,0 @@
-Wav files, uncompressed.

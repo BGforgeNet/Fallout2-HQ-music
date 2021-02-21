@@ -10,16 +10,15 @@
 
 Standard Fallout 1/2 music is 22Khz `.acm`. In this repo you can find the following alternatives:
 - __High quality__: 44.1Khz `.acm`. (Already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
-- __Ultra HQ `.wav`__: lossess, uncompressed. ~1Gb.
-- __Ultra HQ WavPack__: lossless. ~0.5Gb, but requires WavPack codec.
+- __Lossless__: highest quality there is. Lossess. Wav version is uncompressed, ~1Gb. WavPack and Flac are ~0.5Gb, but require corresponding codecs.
 
 ## Installation
 1. [Sfall](#sfall)
-1. [HQ](#hq) | [UHQ wav](#uhq-wav) | [UHQ WavPack](#uhq-wavpack)
+1. [HQ](#hq) | [Lossless](#lossless).
 1. Extra tips: [Fallout 1](#fallout-1), [Linux](#linux).
 
 ### Sfall
-Sfall is required for any HQ/UHQ option.
+Sfall is required for any HQ/Lossless option.
 
 1. You need [sfall](https://github.com/phobos2077/sfall) (`ddraw.dll`) version 4.2.9+. Download [here](https://github.com/phobos2077/sfall/releases).
   If you use [UPU](https://github.com/BGforgeNet/Fallout2_Unofficial_Patch) or [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project) version 19+, you already have it.
@@ -31,10 +30,10 @@ Sfall is required for any HQ/UHQ option.
 
 ### HQ
 1. Download `hq` package from the [latest release page](https://github.com/BGforgeNet/Fallout2-HQ-music/releases/latest).
-1. Extract into `data\sound\music`.
+1. Extract files into `data\sound\music`.
 
-### UHQ (wav)
-Same as HQ, but download `uhq_wav` package instead.
+### Lossless
+Same as HQ, but download corresponding lossless package instead.
 
 Also, in `ddraw.ini`, find and set the following:
 ```ini
@@ -42,13 +41,13 @@ Also, in `ddraw.ini`, find and set the following:
 AllowDShowSound=2
 ```
 
-### UHQ (WavPack)
-Same as UHQ (wav), but download `uhq_wavpack` package instead.
-Also, you will need to install [WavPack](https://www.wavpack.com/downloads.html) DirectShow Filter.
+- For __Wav__, no additional configuration required.
+- For __WavPack__, you will need to install [WavPack](https://www.wavpack.com/downloads.html) DirectShow Filter.
+- For __Flac__, you will need [flac](https://www.xiph.org/dshow/) codecs.
 
 ## Fallout 1
-You can't use HQ/UHQ in Fallout **1** directly. But you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2). The procedure is the same.
+You can't use HQ/Lossless in Fallout **1** directly. But you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2). The procedure is the same.
 
 ## Linux
 - Make sure to install `gstreamer-plugins-good`, with architecture matching `WINEARCH`.
-- For UHQ (WavPack), also install WavPack.
+- For WavPack/Flac, also install corresponding packages.

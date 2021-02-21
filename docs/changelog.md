@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 7
+- Renamed UHQ to Lossless.
+- Added a flac package.
+
 ## Version 6
 - Switched to 44.1Khz.
 - Added a WavPack package.

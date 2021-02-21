@@ -10,8 +10,8 @@ if [[ ! -z "${GITHUB_REF-}" ]]; then
   fi
 fi
 
-for q in hq uhq_wav uhq_wavpack; do
-  fname="fallout_${q}_music_${version}.zip"
+for q in hq lossless_wav lossless_wavpack lossless_flac; do
+  fname="fallout_music_${q}_${version}.zip"
   cd "$q"
   rm -f readme.md
   zip "$fname" *
