@@ -1,5 +1,8 @@
 # Changelog
 
+## Version 8
+- Fixed worldmap music in [ettu](https://github.com/BGforgeNet/Fallout2-HQ-music/pull/6).
+
 ## Version 7
 - Renamed UHQ to Lossless.
 - Added a flac package.
