@@ -14,6 +14,9 @@ for q in hq lossless_wav lossless_wavpack lossless_flac; do
   fname="fallout_music_${q}_${version}.zip"
   cd "$q"
   rm -f readme.md
+  for f in 03wrldmp.*; do 
+    cp -- "$f" "03world${f#03wrldmp}"
+  done
   zip "$fname" *
   mv "$fname" ..
   cd ..
