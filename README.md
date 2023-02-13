@@ -8,8 +8,8 @@
 | [__Forum__](https://forums.bgforge.net/viewtopic.php?f=34&t=286)
 
 
-Standard Fallout 1/2 music is 22Khz `.acm`. In this repo you can find the following alternatives:
-- __High quality__: 44.1Khz `.acm`. ~350Mb. (Already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
+Standard Fallout 1/2 music is 22 kHz `.acm`. In this repo you can find the following alternatives:
+- __High quality__: 44.1 kHz `.acm`. ~350Mb. (Already included into [Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
 - __Lossless__: highest quality there is. Lossess. Wav version is uncompressed, ~1Gb. WavPack and Flac are ~0.5Gb, but require corresponding codecs.
 
 ## Installation
