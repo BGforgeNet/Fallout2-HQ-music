@@ -20,7 +20,7 @@ Standard Fallout 1/2 music is 22 kHz `.acm`. In this repo you can find the follo
 ### Sfall
 Sfall is required for any HQ/Lossless option.
 
-1. You need [sfall](https://github.com/phobos2077/sfall) (`ddraw.dll`) version 4.2.9+. Download [here](https://github.com/phobos2077/sfall/releases).
+1. You need [sfall](https://github.com/phobos2077/sfall) (`ddraw.dll`) version 4.2.9+. Download [here](https://github.com/sfall-team/sfall/releases).
   If you use [UPU](https://github.com/BGforgeNet/Fallout2_Unofficial_Patch) or [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project) version 19+, you already have it.
 2. In `fallout2.cfg`, find and set the following:
     ```ini
