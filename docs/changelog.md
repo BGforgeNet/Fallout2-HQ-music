@@ -1,8 +1,12 @@
 # Changelog
 
+## Version 8.1
+
+Added torrents to releases.
+
 ## Version 8
 
-- Fixed worldmap music in [ettu](https://github.com/BGforgeNet/Fallout2-HQ-music/pull/6).
+Fixed worldmap music in [ettu](https://github.com/BGforgeNet/Fallout2-HQ-music/pull/6).
 
 ## Version 7
 
