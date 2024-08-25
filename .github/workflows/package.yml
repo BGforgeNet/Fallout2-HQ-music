@@ -8,6 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@master
+
       - name: Package
         run: ./extra/package.sh
 
@@ -16,5 +19,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: fallout*.zip
+          fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
