@@ -14,11 +14,19 @@ jobs:
       - name: Package
         run: ./extra/package.sh
 
+      - name: Create torrents
+        uses: devopsx/action-torrent@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: fallout*.zip
+
       - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: fallout*.zip
+          files: |
+            fallout*.zip
+            torrents/*
           fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
