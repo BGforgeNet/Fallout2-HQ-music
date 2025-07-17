@@ -32,12 +32,12 @@ Sfall is required for any HQ/Lossless option.
 
 ### HQ
 
-1. Download `hq` package from the [latest release page](https://github.com/BGforgeNet/Fallout2-HQ-music/releases/latest).
-1. Extract files into `data\sound\music`.
+1. Download the `hq` package from the [latest release page](https://github.com/BGforgeNet/Fallout2-HQ-music/releases/latest).
+2. Extract files into `data\sound\music`.
 
 ### Lossless
 
-Same as HQ, but download corresponding lossless package instead.
+Same as HQ, but download the lossless package instead.
 
 Also, in `ddraw.ini`, find and set the following:
 
@@ -46,15 +46,15 @@ Also, in `ddraw.ini`, find and set the following:
 AllowDShowSound=1
 ```
 
-- For **Wav**, no additional configuration required.
-- For **WavPack**, you will need to install [WavPack](https://www.wavpack.com/downloads.html) DirectShow Filter.
+- For **Wav**, no additional configuration is required.
+- For **WavPack**, you will need to install the [WavPack](https://www.wavpack.com/downloads.html) DirectShow Filter.
 - For **Flac**, you will need [flac](https://www.xiph.org/dshow/) codecs.
 
 ## Fallout 1
 
-You can't use HQ/Lossless in Fallout **1** directly. But you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2). The procedure is the same.
+You can't use HQ/Lossless in Fallout **1** directly, but you can use it in [Fallout1in2](https://github.com/rotators/Fo1in2). The procedure is the same.
 
 ## Linux
 
 - Make sure to install `gstreamer-plugins-good`, with architecture matching `WINEARCH`.
-- For WavPack/Flac, also install corresponding packages.
+- For WavPack/Flac, also install the corresponding packages.
