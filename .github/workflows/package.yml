@@ -5,23 +5,24 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: ShellCheck
-        uses: ludeeus/action-shellcheck@master
+        uses: ludeeus/action-shellcheck@00cae500b08a931fb5698e11e79bfbd38e612a38 # 2.0.0
 
       - name: Package
         run: ./extra/package.sh
 
       - name: Create torrents
-        uses: devopsx/action-torrent@v1
+        uses: devopsx/action-torrent@18d1dfef495e73cb94093731e9e5c845653fbc11 # v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: fallout*.zip
 
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
