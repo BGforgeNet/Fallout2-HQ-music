@@ -1,16 +1,19 @@
-# High quality music for Fallout 1 and 2.
+# High quality music for Fallout 1 and 2
 
-[![Build Status](https://github.com/BGforgeNet/Fallout2-HQ-music/workflows/package/badge.svg)](https://github.com/BGforgeNet/Fallout2-HQ-music/actions?query=workflow%3Apackage)
-[![Discord chat](https://img.shields.io/discord/420268540700917760?logo=discord)](https://discord.gg/4Yqfggm)
+[![Build status](https://github.com/BGforgeNet/Fallout2-HQ-music/actions/workflows/package.yml/badge.svg)](https://github.com/BGforgeNet/Fallout2-HQ-music/actions/workflows/package.yml)
+
+[![Telegram](https://img.shields.io/badge/telegram-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange?logo=telegram)](https://t.me/bgforge)
+[![Discord](https://img.shields.io/discord/420268540700917760?logo=discord&label=discord&color=blue&logoColor=FEE75C)](https://discord.gg/4Yqfggm)
+[![IRC](https://img.shields.io/badge/%23IRC-join%20%20%20%20%E2%9D%B1%E2%9D%B1%E2%9D%B1-darkorange)](https://bgforge.net/irc)
 
 [**Download**](https://github.com/BGforgeNet/Fallout2-HQ-music/releases/latest)
 | [**Installation**](#installation)
-| [**Forum**](https://forums.bgforge.net/viewtopic.php?f=34&t=286)
+| [**Report issues**](#bug-reports-feature-requests)
 
 Standard Fallout 1/2 music is 22 kHz `.acm`. In this repo you can find the following alternatives:
 
 - **High quality**: 44.1 kHz `.acm`. ~350Mb. (Already included into [Restoration Project, updated](https://github.com/BGforgeNet/Fallout2_Restoration_Project)).
-- **Lossless**: highest quality there is. Lossess. Wav version is uncompressed, ~1Gb. WavPack and Flac are ~0.5Gb, but require corresponding codecs.
+- **Lossless**: highest quality there is. Wav version is uncompressed, ~1Gb. WavPack and Flac are ~0.5Gb, but require corresponding codecs.
 
 ## Installation
 
@@ -22,7 +25,7 @@ Standard Fallout 1/2 music is 22 kHz `.acm`. In this repo you can find the follo
 
 Sfall is required for any HQ/Lossless option.
 
-1. You need [sfall](https://github.com/phobos2077/sfall) (`ddraw.dll`) version 4.3.7+. Download [here](https://github.com/sfall-team/sfall/releases).
+1. You need [sfall](https://github.com/sfall-team/sfall) (`ddraw.dll`) version 4.3.7+. Download [here](https://github.com/sfall-team/sfall/releases).
    If you use [UPU](https://github.com/BGforgeNet/Fallout2_Unofficial_Patch) or [RPU](https://github.com/BGforgeNet/Fallout2_Restoration_Project) version 30+, you already have it.
 2. In `fallout2.cfg`, find and set the following:
    ```ini
@@ -58,3 +61,11 @@ You can't use HQ/Lossless in Fallout **1** directly, but you can use it in [Fall
 
 - Make sure to install `gstreamer-plugins-good`, with architecture matching `WINEARCH`.
 - For WavPack/Flac, also install the corresponding packages.
+
+## Bug reports, feature requests
+
+Go to [github issues](https://github.com/BGforgeNet/Fallout2-HQ-music/issues) or the [forum thread](https://forums.bgforge.net/viewtopic.php?f=34&t=286).
+
+## Additional info
+
+[**Changelog**](docs/changelog.md)
